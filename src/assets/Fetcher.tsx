@@ -20,7 +20,7 @@ interface Table{
 }
         
 const Fetcher = () => {
-    const op = useRef(null);
+    const op = useRef<OverlayPanel>(null);
     const inputRef = useRef<HTMLInputElement>(null);
     const [table, setTable] = useState<Table[]>();
     const [page, setPage] = useState(1);
